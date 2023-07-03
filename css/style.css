@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+@media (max-width: 780px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1100px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #F9F9F9;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #9b5ffc;
+  transition: background, color 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+a:hover {
+  color: #7621ff;
+  background: rgba(118, 33, 255, 0.1843137255);
+}
+
+main {
+  display: grid;
+  width: 100%;
+  height: 85vh;
+  place-items: center;
+}
+
+.card {
+  display: block;
+  width: 70%;
+  padding: 2rem 2.5rem;
+  background: #DCC6FF;
+  border-radius: 0.5rem;
+}
+@media (max-width: 780px) {
+  .card {
+    width: 90%;
+  }
+}
+.card .card-heading {
+  display: inline-block;
+  color: #222222;
+  font-size: 2.25rem;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.card .card-subtext {
+  display: inline-block;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: block;
+  text-align: center;
+}
+footer p {
+  color: #565656;
+  font-size: 1rem;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  border-color: none;
+  background: #F0F0F0;
+  padding: 0.5rem 1rem;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 400;
+  word-wrap: break-word;
+  transition: background 0.85s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.25s ease-in;
+}
+.btn:hover {
+  background: #9b5ffc;
+  color: #F0F0F0;
+}

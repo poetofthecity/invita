@@ -1,0 +1,23 @@
+// _components.scss
+
+// btn
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: .5rem;
+	border-color: none;
+	background: #F0F0F0;
+	padding: .5rem 1rem;
+	color: #222222;
+	font-size: 1rem;
+	font-weight: 400;
+	word-wrap: break-word;
+	transition: background .85s cubic-bezier(0.075, 0.82, 0.165, 1), color .25s ease-in;
+    
+	&:hover{
+		background: #9b5ffc;
+		color: #F0F0F0;
+	}
+}

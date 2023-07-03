@@ -1,0 +1,58 @@
+// _layout.scss
+// imports
+@use 'utils' as u;
+
+// main layout
+main {
+	display: grid;
+    width: 100%;
+    height: 85vh;
+    place-items: center;
+}
+
+// card
+.card {
+	display: block;
+	width: 70%;
+
+	padding: 2rem 2.5rem;
+	background: #DCC6FF;
+	border-radius: .5rem;
+
+	@include u.bp(tab){
+		width: 90%;
+	}
+
+	.card-heading {
+		display: inline-block;
+		color: #222222;
+		font-size: 2.25rem;
+		font-weight: 600;
+		word-wrap: break-word
+	}
+
+	.card-subtext {
+		display: inline-block;
+		color: #222222;
+		font-size: 1rem;
+		font-weight: 300;
+		word-wrap: break-word;
+		margin-bottom: 1rem;
+
+	}
+}
+
+// footer
+footer {
+	display: block;
+	text-align: center;
+
+	p {
+		color: #565656;
+		font-size: 1rem;
+		font-weight: 400;
+		word-wrap: break-word;
+		padding: 1rem;
+		padding-bottom: 3rem;
+	}
+}
