@@ -3,6 +3,7 @@
 // mixins breakpoints
 @mixin bp($point) {
 
+	$phone: "(max-width: 380px)";
 	$tab: "(max-width: 780px)";
 	$small: "(max-width: 1100px)";
 	$mediam: "(max-width: 1300px)";
@@ -31,5 +32,12 @@
 			@content;
 		}
 	}
+
+	@if $point == phone {
+		@media #{$phone} {
+			@content;
+		}
+	}
+
 
 }

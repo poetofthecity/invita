@@ -8,22 +8,28 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	
+
 }
 
 html {
 	scroll-behavior: smooth;
-	@include u.bp(tab){
-		font-size: 13px;
+	font-size: 18px;
+
+	@include u.bp(small) {
+		font-size: 16px;
 	}
-	@include u.bp(small){
+
+	@include u.bp(tab) {
 		font-size: 14px;
 	}
-	font-size: 18px;
+
+	@include u.bp(phone) {
+		font-size: 12px;
+	}
 }
 
 
-body{
+body {
 	font-family: 'Poppins', sans-serif;
 	background: #F9F9F9;
 	user-select: none;
@@ -42,9 +48,8 @@ a {
 	color: #9b5ffc;
 	transition: background, color .25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-	&:hover{
+	&:hover {
 		color: #7621ff;
 		background: #7621ff2f;
 	}
 }
-
